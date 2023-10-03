@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto&display=swap');
+
+/* Navbar */
+.navbar {
+    font-family: 'Mooli', Arial, Helvetica, sans-serif;
+}
+
+.navbar .navbar-nav .nav-but {
+    padding: 5px;
+    display: block;
+}
+
+.navbar-expand-lg{
+    justify-content: space-evenly;
+}
+
+.navbar .container{
+    margin: 0;
+}
+
+#title-navbar-page {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+/* Dashboard */
+
+.content {
+    padding: 20px 20px;
+}
+
+/* Guest */
+.p-guest {
+    font-size: 22px;
+    font-family: 'Mooli', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+/* Auth */
+
+
+
+/* Button Add */
+.btn-add {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+    border: none;
+    padding: 0 16px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #cecece;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.btn-primary-add {
+    color: #ffffff;
+    background-color: #3F51B5;
+}
+
+.btn-primary-add:hover,
+.btn-primary-add:focus,
+.btn-primary-add:active{
+    color: #ffffff;
+    background-color: #3949AB;
+}
+
+
+
+/* Modal Add Modal Edit Modal Status*/
+.modal-add{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000000ab;
+    display: grid;
+    place-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.modal-edit {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    background-color: #000000ab;
+    display: grid;
+    place-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.modal-status{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    background-color: #000000ab;
+    display: grid;
+    place-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    z-index: 1000;
+}
+
+
+
+.modal-add:target,
+.modal-edit:target,
+.modal-status:target{
+    visibility: visible;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+
+
+.modal__content{
+    background-color: #ffffff;
+    width: 700px;
+    padding: 0 2rem 2rem;
+    border-radius: 4px;
+    border-top: .5rem solid #3F51B5;
+}
+
+.modal__title{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-family: 'Mooli', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.form-control{
+    background-color: #dcdcdc;
+    font-family: 'Mooli', Arial, Helvetica, sans-serif;
+}
+
+.label__name{
+    font-family: 'Mooli', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.alert{
+    margin-top: 3px;
+    padding: 5px;
+}
+
+
+
+.modal-button-container .btn-primary {
+    margin-right: auto; 
+}
+
+.btn-status{
+    font-family: 'Mooli', Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease;
+}
+
+
+.btn-status__todo{
+    background-color: #d1d3e2;
+}
+
+.btn-status__todo:hover,
+.btn-status__todo:focus,
+.btn-status__todo:active{
+    background-color: #b3b4ba;
+}
+
+
+.btn-status__doing{
+    background-color: #ffa749;
+}
+
+.btn-status__doing:hover,
+.btn-status__doing:focus,
+.btn-status__doing:active{
+    background-color: #f09635;
+}
+
+
+.btn-status__done{
+    background-color: #48e340;
+}
+
+.btn-status__done:hover,
+.btn-status__done:focus,
+.btn-status__done:active{
+    background-color: #35c92d;
+}
+
+
+
+/* Kanban */
+.kanban-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.kanban-column {
+    flex-basis: calc(33.33% - 20px);
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    height: fit-content;
+}
+
+.kanban-column h3{
+    font-family: 'Mooli', Arial, Helvetica, sans-serif;
+}
+
+
+
+.task-card {
+    background-color: #fff;
+    border: 1px solid #d1d3e2;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task-card p{
+    font-size: 16px;
+    font-family: 'Mooli', Arial, Helvetica, sans-serif;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-actions button {
+    margin-right: 5px;
+}
+
+.kanban-column-todo{
+    background-color: #d1d3e2;
+}
+
+.kanban-column-doing{
+    background-color: #ffa749;
+}
+
+.kanban-column-done{
+    background-color: #48e340;
+}
+
+
+
+/* Cards Buttons*/
+.btn-danger,
+.btn-success,
+.btn-warning{
+    font-size: 20px;
+    padding: 4px 8px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .kanban-column {
+        flex-basis: 100%;
+    }
+
+    .modal__content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem 1rem;
+    }
+    
+    .modal__title {
+        font-size: 24px;
+    }
+
+    .btn-status > button{
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    .btn-secondary{
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    .modal-button-container > .btn-primary{
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+}
